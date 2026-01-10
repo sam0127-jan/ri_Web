@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rudraksha InfoTech - Web Development Course</title>
+
+  <style>
+    :root{
+      --bg1:#0f0c29;
+      --bg2:#302b63;
+      --accent:#00bcd4;
+      --card:rgba(255,255,255,0.06);
+      --glass:rgba(255,255,255,0.05);
+      --muted:rgba(255,255,255,0.75);
+      --hover-shadow:0 12px 28px rgba(0,0,0,0.6);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins', sans-serif;}
+
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:#fff;
+      padding:28px;
+    }
+
+    header{
+      max-width:1200px;
+      margin:0 auto 32px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo{
+      width:60px;height:60px;border-radius:12px;
+      background:linear-gradient(135deg,#00ffd5,#00bcd4);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;font-size:20px;color:#042;
+    }
+
+    .brand h1{font-size:22px;}
+    .brand p{font-size:13px;color:rgba(255,255,255,0.8);}
+
+    .container{max-width:1200px;margin:0 auto;}
+
+    .video-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:24px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:16px;
+      padding:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .video-wrap iframe{
+      width:100%;
+      height:220px;
+      border-radius:12px;
+      border:none;
+    }
+
+    .title{
+      margin-top:12px;
+      font-size:18px;
+      font-weight:600;
+    }
+
+    .meta{
+      font-size:13px;
+      color:rgba(255,255,255,0.7);
+      margin-top:4px;
+    }
+
+    footer{
+      margin-top:40px;
+      text-align:center;
+      font-size:13px;
+      color:rgba(255,255,255,0.7);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">WD</div>
+    <div>
+      <h1>Rudraksha InfoTech</h1>
+      <p>Web Development Course</p>
+    </div>
+  </div>
+  <div>© 2025 Rudraksha InfoTech</div>
+</header>
+
+<main class="container">
+  <section class="video-grid">
+
+    <!-- ✅ ONLY ONE VIDEO -->
+    <article class="card">
+      <div class="video-wrap">
+        <iframe 
+          src="https://drive.google.com/file/d/12-oQEbSuz8CySEmZ-VZQE1vc3K9U1XsL/preview"
+          allow="autoplay; encrypted-media">
+        </iframe>
+      </div>
+
+      <div class="title">Introduction to Web Development</div>
+      <div class="meta">WEB DEVELOPMENT • Lecture 1</div>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  Rudraksha InfoTech | Web Development
+</footer>
+
+</body>
+</html>
